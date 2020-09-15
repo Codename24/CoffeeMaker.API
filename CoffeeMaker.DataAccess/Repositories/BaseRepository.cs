@@ -1,6 +1,7 @@
 ﻿using CoffeeMaker.DataAccess.Interfaces;
 using CoffeeMaker.DataAccess.Models;
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -13,7 +14,7 @@ namespace CoffeeMaker.DataAccess.Repositories
         private readonly TContext _context;
         public BaseRepository(TContext context)
         {
-            _context = context;
+            _context = context?? throw new ArgumentNullException(nameof(context)); ;
         }
         public async Task<TEntity> Add(TEntity entity)
         {

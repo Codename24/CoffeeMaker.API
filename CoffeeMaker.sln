@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeMaker.DataAccess", "C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeMaker.Common", "CoffeeMaker.Common\CoffeeMaker.Common.csproj", "{9F40536F-F134-4537-A6C3-FAAEAC656F36}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeMaker.BusinessLogic", "CoffeeMaker.BusinessLogic\CoffeeMaker.BusinessLogic.csproj", "{0E45D8CA-EA1E-468A-949D-0D2DB29D62C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{9F40536F-F134-4537-A6C3-FAAEAC656F36}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F40536F-F134-4537-A6C3-FAAEAC656F36}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F40536F-F134-4537-A6C3-FAAEAC656F36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E45D8CA-EA1E-468A-949D-0D2DB29D62C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E45D8CA-EA1E-468A-949D-0D2DB29D62C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E45D8CA-EA1E-468A-949D-0D2DB29D62C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E45D8CA-EA1E-468A-949D-0D2DB29D62C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

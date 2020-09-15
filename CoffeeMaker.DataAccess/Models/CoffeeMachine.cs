@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Text;
 
 namespace CoffeeMaker.DataAccess.Models
 {
@@ -15,6 +13,10 @@ namespace CoffeeMaker.DataAccess.Models
         [Required]
         [StringLength(30)]
         public string ServiceNumber { get; set; }
+        public string Name { get; set; }
+        public string Location { get; set; }
+        public string Email { get; set; }
+        public string ResponsibleEmployee { get; set; }
         ICollection<MachineType> MachineTypes { get; set; }
         ICollection<ServiceDetails> ServiceDetails { get; set; }
     }
