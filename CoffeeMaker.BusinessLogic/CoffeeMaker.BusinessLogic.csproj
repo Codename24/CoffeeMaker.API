@@ -1,17 +1,16 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CoffeeMaker.Common\CoffeeMaker.Common.csproj" />
-    <ProjectReference Include="..\CoffeeMaker.DataAccess\CoffeeMaker.DataAccess.csproj" />
+    <PackageReference Include="AutoMapper" Version="10.0.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Interfaces\" />
-    <Folder Include="Services\" />
+    <ProjectReference Include="..\CoffeeMaker.Common\CoffeeMaker.Common.csproj" />
+    <ProjectReference Include="..\CoffeeMaker.DataAccess\CoffeeMaker.DataAccess.csproj" />
   </ItemGroup>
 
 </Project>
