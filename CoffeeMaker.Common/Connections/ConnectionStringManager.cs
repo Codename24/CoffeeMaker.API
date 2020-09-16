@@ -1,6 +1,15 @@
-﻿namespace CoffeeMaker.Common.Connections
+﻿using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Protocols;
+
+namespace CoffeeMaker.Common.Connections
 {
-    public class ConnectionStringManager
+    public static class ConnectionStringManager
     {
+        public static string ConnectionStringFromConfig(IConfiguration configuration, IConfigurationRoot configRoot)
+            => configuration.GetConnectionString("") ?? configRoot["ConnectionStrings:"];
+        public static string GetConnectionStringFromKeyVault()
+        {
+            return null;
+        }
     }
 }

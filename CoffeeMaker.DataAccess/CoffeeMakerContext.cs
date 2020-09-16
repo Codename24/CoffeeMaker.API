@@ -1,9 +1,10 @@
-﻿using CoffeeMaker.DataAccess.Models;
+﻿using CoffeeMaker.DataAccess.Interfaces;
+using CoffeeMaker.DataAccess.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace CoffeeMaker.DataAccess
 {
-    class CoffeeMakerContext : DbContext
+    public class CoffeeMakerContext : DbContext, ICoffeeMakerContext
     {
         public CoffeeMakerContext() : base()
         {
