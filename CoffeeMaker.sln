@@ -5,6 +5,12 @@ VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeMaker.API", "CoffeeMaker.API\CoffeeMaker.API.csproj", "{DC95F037-036A-4408-821E-7AD976680F10}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeMaker.DataAccess", "CoffeeMaker.DataAccess\CoffeeMaker.DataAccess.csproj", "{BDCD1261-B243-4FD8-AF55-D473A27CD594}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeMaker.Common", "CoffeeMaker.Common\CoffeeMaker.Common.csproj", "{9F40536F-F134-4537-A6C3-FAAEAC656F36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeMaker.BusinessLogic", "CoffeeMaker.BusinessLogic\CoffeeMaker.BusinessLogic.csproj", "{0E45D8CA-EA1E-468A-949D-0D2DB29D62C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{DC95F037-036A-4408-821E-7AD976680F10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC95F037-036A-4408-821E-7AD976680F10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC95F037-036A-4408-821E-7AD976680F10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDCD1261-B243-4FD8-AF55-D473A27CD594}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDCD1261-B243-4FD8-AF55-D473A27CD594}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDCD1261-B243-4FD8-AF55-D473A27CD594}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDCD1261-B243-4FD8-AF55-D473A27CD594}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F40536F-F134-4537-A6C3-FAAEAC656F36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F40536F-F134-4537-A6C3-FAAEAC656F36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F40536F-F134-4537-A6C3-FAAEAC656F36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F40536F-F134-4537-A6C3-FAAEAC656F36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E45D8CA-EA1E-468A-949D-0D2DB29D62C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E45D8CA-EA1E-468A-949D-0D2DB29D62C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E45D8CA-EA1E-468A-949D-0D2DB29D62C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E45D8CA-EA1E-468A-949D-0D2DB29D62C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
