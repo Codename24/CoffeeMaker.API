@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using CoffeeMaker.BusinessLogic.Interfaces;
 using CoffeeMaker.BusinessLogic.Repositories;
 using CoffeeMaker.BusinessLogic.Services;
@@ -38,7 +39,8 @@ namespace CoffeeMaker.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            
+            services.AddAutoMapper(typeof(Startup));
+
             services.AddDbContext(Configuration, configRoot);
             services.AddTransient(typeof(IBaseRepository<>), typeof(BaseRepository<,>));
             services.AddTransient<ICoffeeMachineRepository, CoffeeMachineRepository>();
@@ -63,6 +65,13 @@ namespace CoffeeMaker.API
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "CoffeeMakerAPI V1");
+            });
 
             app.UseAuthorization();
 

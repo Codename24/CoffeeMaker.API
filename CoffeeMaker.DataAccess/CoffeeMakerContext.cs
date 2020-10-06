@@ -9,6 +9,10 @@ namespace CoffeeMaker.DataAccess
         public CoffeeMakerContext() : base()
         {
         }
+        public CoffeeMakerContext(DbContextOptions<CoffeeMakerContext> options)
+            : base(options)
+        {
+        }
 
         public DbSet<CoffeeMachine> CoffeeMachines { get; set; }
         public DbSet<MachineType> MachineTypes { get; set; }

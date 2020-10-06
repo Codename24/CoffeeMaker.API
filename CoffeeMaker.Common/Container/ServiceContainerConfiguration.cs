@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -28,17 +29,11 @@ namespace CoffeeMaker.Common.Container
         {
             serviceCollection.AddSwaggerGen(setupAction =>
             {
-                setupAction.SwaggerDoc(
-                    "OpenAPISpecification",
-                    new Microsoft.OpenApi.Models.OpenApiInfo()
-                    {
-                        Title = "CoffeeMaker API",
-                        Version = "1",
-                    });
+                setupAction.SwaggerDoc("v1", new OpenApiInfo { Title = "CoffeeMakerAPI", Version = "v1" });
 
-                var xmlCommentsFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-                var xmlCommentsFullPath = Path.Combine(AppContext.BaseDirectory, xmlCommentsFile);
-                setupAction.IncludeXmlComments(xmlCommentsFullPath);
+                //var xmlCommentsFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                //var xmlCommentsFullPath = Path.Combine(AppContext.BaseDirectory, xmlCommentsFile);
+                //setupAction.IncludeXmlComments(xmlCommentsFullPath);
             });
         }
 
