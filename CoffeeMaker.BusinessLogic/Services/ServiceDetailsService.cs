@@ -1,10 +1,8 @@
 ﻿using CoffeeMaker.BusinessLogic.Interfaces;
 using CoffeeMaker.BusinessLogic.Models;
 using CoffeeMaker.DataAccess.Interfaces;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace CoffeeMaker.BusinessLogic.Services

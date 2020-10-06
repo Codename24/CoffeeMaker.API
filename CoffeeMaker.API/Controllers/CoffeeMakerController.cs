@@ -23,5 +23,15 @@ namespace CoffeeMaker.API.Controllers
         [HttpGet]
         public async Task<List<CoffeeMachineDTO>> GetCoffeeMachineDTOs()
             => await _coffeeMachineService.GetAllAsync();
+
+        [HttpGet]
+        public async Task<CoffeeMachineDTO> GetCoffeeMachine(int id)
+            => await _coffeeMachineService.Get(id);
+
+        [HttpGet]
+        [Route("servicedetails")]
+        public async Task<ServiceDetailsDTO> GetCoffeeMachineServiceDetails(int id)
+            => await _serviceDetailsService
+
     }
 }
