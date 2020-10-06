@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CoffeeMaker.BusinessLogic.Interfaces
 {
-    interface IServiceDetailsService
+    public interface IServiceDetailsService
     {
     }
 }

@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CoffeeMaker.BusinessLogic\CoffeeMaker.BusinessLogic.csproj" />
     <ProjectReference Include="..\CoffeeMaker.Common\CoffeeMaker.Common.csproj" />
   </ItemGroup>
 
