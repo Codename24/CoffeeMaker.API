@@ -16,7 +16,7 @@ namespace CoffeeMaker.DataAccess
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("");
+            optionsBuilder.UseSqlServer("Server=.;Database=CoffeeMaker.DB;Trusted_Connection=True;");
         }
 
 
