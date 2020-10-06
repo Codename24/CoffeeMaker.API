@@ -30,6 +30,18 @@ namespace CoffeeMaker.BusinessLogic.Repositories
             return _mapper.Map<CoffeeMachineDTO>(result);
         }
 
+        public async Task<CoffeeMachineDTO> Update(CoffeeMachineDTO coffeeMachine)
+        {
+            var result = await _coffeeMachineRepository.Update(_mapper.Map<CoffeeMachine>(coffeeMachine));
+            return _mapper.Map<CoffeeMachineDTO>(result);
+        }
+
+        public async Task<CoffeeMachineDTO> Delete(int id)
+        {
+            var result = await _coffeeMachineRepository.Delete(id);
+            return _mapper.Map<CoffeeMachineDTO>(result);
+        }
+
         public async Task<List<CoffeeMachineDTO>> GetAllAsync()
             => _mapper.Map<List<CoffeeMachineDTO>>(await _coffeeMachineRepository.GetAll());
 

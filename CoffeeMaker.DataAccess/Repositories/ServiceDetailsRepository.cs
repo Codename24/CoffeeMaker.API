@@ -17,7 +17,7 @@ namespace CoffeeMaker.DataAccess.Repositories
 
         public async Task<List<ServiceDetails>> GetServiceDetailsByMachineId(int coffeeMachineId) =>
           await _context
-            .ServiceDetails
+            .ServiceDetails.Include(c=>c.CoffeeMachine)
             .Where(c => c.CoffeeMachineId == coffeeMachineId)
             .ToListAsync();
 

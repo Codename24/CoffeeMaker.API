@@ -9,5 +9,7 @@ namespace CoffeeMaker.BusinessLogic.Interfaces
         Task<CoffeeMachineDTO> Get(int id);
         Task<CoffeeMachineDTO> Add(CoffeeMachineDTO coffeeMachine);
         Task<List<CoffeeMachineDTO>> GetAllAsync();
+        Task<CoffeeMachineDTO> Update(CoffeeMachineDTO coffeeMachine);
+        Task<CoffeeMachineDTO> Delete(int id);
     }
 }
